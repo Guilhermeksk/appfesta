@@ -19,7 +19,9 @@ export default function App() {
           onChangeText={(value) => setInputQtd(value)}
         />
       </View>
-      <TouchableOpacity style={styles.botao}>
+      <TouchableOpacity style={styles.botao}
+ onPress={()=>setQtd(inputQtd)}
+   >
         <Text style={styles.textoBotao}> Calcular </Text>
       </ TouchableOpacity>
       <Componente qtd={qtd} />
